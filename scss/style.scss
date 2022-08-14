@@ -35,6 +35,18 @@ main {
     align-items: center;
     justify-content: center;
 
+    .sr-only {
+        position: absolute !important;
+        margin: -1px !important;
+        -webkit-clip-path: inset(50%) !important;
+                clip-path: inset(50%) !important;
+        border: 0 !important;
+        padding: 0 !important;
+        width: 1px !important;
+        height: 1px !important;
+        overflow: hidden !important;
+        white-space: nowrap !important;
+    }
     // card container
     .card-container {
         display: flex;
@@ -47,14 +59,11 @@ main {
         border-radius: 4%;
         box-shadow: -2px 5px 10px 10px hsl(218, 53%, 10%);
 
-        .image-bg {
+        .image-card {
             margin-top: 1.8rem;
             border-radius: 5%;
             width: 16rem;
             height: 16rem;
-            background-image: url(../images/image-equilibrium.jpg);
-            background-position: center;
-            background-size: cover;
             position: relative;
             z-index: 1;
 
@@ -93,6 +102,7 @@ main {
                 align-items: flex-start;
                 color: $white;
                 font-weight: 600;
+                text-decoration: none;
 
                 &:hover {
                     color: $cian;
