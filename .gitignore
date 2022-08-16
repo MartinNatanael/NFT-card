@@ -16,5 +16,5 @@
 *.docx
 .DS_Store
 .prettierignore
-/design
 style-guide.md
+design/
