@@ -49,12 +49,32 @@ main .card-container {
   box-shadow: -2px 5px 10px 10px hsl(218deg, 53%, 10%);
 }
 main .card-container .image-card {
-  margin-top: 1.8rem;
+  margin-top: 0.7rem;
   border-radius: 5%;
   width: 16rem;
   height: 16rem;
   position: relative;
-  z-index: 1;
+}
+main .card-container .image-card::before {
+  content: url(../images/icon-view.svg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(178deg, 100%, 50%, 0.6);
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.5s;
+  z-index: 10;
+  margin-top: 0.7rem;
+}
+main .card-container .image-card:hover::before {
+  opacity: 1;
 }
 main .card-container .card-text {
   max-width: 16rem;
