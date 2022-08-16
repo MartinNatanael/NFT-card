@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-<title>Frontend Mentor | NFT preview card component</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Frontend Mentor | NFT preview card component</title>
 </head>
+
 <body>
-<section >
-  <div class="card-container">
-    <div class="image-bg"></div>
-    <div class="card-text">
-      <h1 class="card-title">Equilibrium #3429</h1>
-      <p class="card-description">Our Equilibrium collection promotes balance and calm.</p>
-    </div>  
-    <div class="card-value-container">
-      <p class="card-value"><img src="images/icon-ethereum.svg" alt=""> 0.041 ETH</p>
-      <p class="card-value-time"><img src="images/icon-clock.svg" alt=""> 3 days left</p> 
+  <main>
+    <h1 class="sr-only">Frontend Mentor | NFT preview card component</h1>
+    <!--Card container-->
+    <div class="card-container">
+      <a class="image-card" href="https://martinnatanael.github.io/NFT-card/images/image-equilibrium.jpg" target="_blank" rel="noopener"><img
+          class="image-card" src="images/image-equilibrium.jpg" alt="open a new tab with the full image"></a>
+      <!--card body-->
+          <div class="card-text">
+        <a class="card-title" href="#">Equilibrium #3429</a>
+        <p class="card-description">Our Equilibrium collection promotes balance and calm.</p>
+      </div>
+      <ul class="card-value-container">
+        <li class="card-value"><img src="images/icon-ethereum.svg" alt="" aria-hidden="true" ><p>0.041 ETH</p></li>
+        <li class="card-value-time"><img src="images/icon-clock.svg" alt="" aria-hidden="true" ><p>3 days left</p></li>
+      </ul>
+      <div class="card-creator">
+        <figure><img src="images/image-avatar.png" alt="Jules Wyvern"></figure>
+        <p class="card-creator-name">Creation of <a href="#" class="name">Jules Wyvern</a></p>
+      </div>
     </div>
-    <div class="card-creator">
-      <img src="images/image-avatar.png" alt="">
-      <p class="card-creator-name">Creation of <span class="name">Jules Wyvern</span></p>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener" >Frontend Mentor</a>.
+      Coded by <a href="https://www.linkedin.com/in/martin-natanael/" target="_blank" rel="noopener" >Martin Martinez</a>.
     </div>
-  </div>
-</section>
-<footer>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://www.linkedin.com/in/martin-natanael/" target="_blank">Martin Martinez</a>.
-  </div>
-</footer>
+  </footer>
 </body>
+
 </html>
